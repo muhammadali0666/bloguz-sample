@@ -16,7 +16,7 @@ export const HeaderTop = () => {
             <MdEmail className="header-top-icon"/>
             mshuhratjonov@gmail.com
           </a>
-          <a className="header-top-link" target="_blank" href="https://muhammadalishuhratjonov50@gmail.com">
+          <a className="header-top-link" target="_blank" href="https://maps.app.goo.gl/4aXR1PSWbjtwioj47">
             <FaMap className="header-top-icon"/>
             Samarqand. sh
           </a>
@@ -24,22 +24,22 @@ export const HeaderTop = () => {
          <div className="header-top-right">
           <ul className="header-top-list">
             <li className="header-top-item">
-              <a href="#" className="header-top-item-link">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100076524691842&mibextid=ZbWKwL" className="header-top-item-link">
                 <FaFacebookF/>
               </a>
             </li>
             <li className="header-top-item">
-              <a href="#" className="header-top-item-link">
+              <a target="_blank" href="https://www.instagram.com/muhammadali122222/?igshid=ZDc4ODBmNjlmNQ%3D%3D" className="header-top-item-link">
                 <BsInstagram/>
               </a>
             </li>
             <li className="header-top-item">
-              <a href="#" className="header-top-item-link">
+              <a target="_blank" href="https://t.me/Sh_Muhammadali5" className="header-top-item-link">
                 <FaTelegramPlane/>
               </a>
             </li>
             <li className="header-top-item">
-              <a href="#" className="header-top-item-link">
+              <a target="_blank" href="linkedin.com/in/muhammadali-shuhratjonov-6362b42a8" className="header-top-item-link">
                 <FaLinkedinIn/>
               </a>
             </li>
