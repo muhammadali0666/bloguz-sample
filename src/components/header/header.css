@@ -27,10 +27,9 @@
   margin-left: 0px;
 }
 .header-item-link {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   line-height: 40px;
-  text-transform: capitalize;
   color: #1e1e1e;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -43,7 +42,7 @@
   color: #b8b5b5;
 }
 .header-item-link.active {
-  font-weight: 700;
+  font-weight: 900;
   border-bottom: #1e1e1e 2px solid;
 }
 .header-btn {

@@ -10,7 +10,7 @@ export const News = () => {
       <div className="container">
         <div className="news-inner">
           <div className="news-box">
-            <button className="news-btn">show all</button>
+            <button className="news-btn">barchasini ko'rish</button>
             <button className="news-btn">sport</button>
             <button className="news-btn">siyosat</button>
             <button className="news-btn">mashxurlar</button>

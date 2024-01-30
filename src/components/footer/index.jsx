@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-inner">
-        <p className="footer-text">Copyright © {new Date().getFullYear()} BlogUz Co., Ltd. All rights reserved.</p>
+        <p className="footer-text">Copyright © {new Date().getFullYear()} BlogUz Co., Ltd. Barcha huquqlar himoyalangan.</p>
         </div>
       </div>
     </footer>

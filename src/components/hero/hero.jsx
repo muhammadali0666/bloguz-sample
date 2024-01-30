@@ -34,9 +34,9 @@ export const Hero = () => {
           <div className="container">
             <div className="hero-box">
               <button className="hero-btn">
-                BlogUz <span>news</span>
+                BlogUz <span>yangiliklari</span>
               </button>
-              <h2 className="hero-title">Hurry!<br/>Important news</h2>
+              <h2 className="hero-title">Xush kelibsiz!<br/>blogimizga</h2>
             </div>
           </div>
         </div>

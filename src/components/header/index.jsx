@@ -23,27 +23,30 @@ export const Header = () => {
               <ul className="header-list">
                 <li className="header-item">
                   <NavLink to="/" className="header-item-link">
-                    Home
+                    Bosh sahifa
                   </NavLink>
                 </li>
                 <li className="header-item">
                   <NavLink to="/about" className="header-item-link">
-                    About
+                    Biz haqimizda
                   </NavLink>
                 </li>
                 <li className="header-item">
                   <NavLink to="/media" className="header-item-link">
-                    Media
+                    Rasmlar
                   </NavLink>
                 </li>
                 <li className="header-item">
                   <NavLink to="/faq" className="header-item-link">
-                    FAQ
+                    Savollar
                   </NavLink>
                 </li>
               </ul>
             </nav>
-            <NavLink to={'/contact'} className="header-btn"><IoMdContact style={{fontSize: "20px", marginRight: "10px"}}/> Contact</NavLink>
+            <NavLink to={"/contact"} className="header-btn">
+              <IoMdContact style={{ fontSize: "20px", marginRight: "10px" }} />{" "}
+              Bog'lanish
+            </NavLink>
           </div>
         </div>
       </div>

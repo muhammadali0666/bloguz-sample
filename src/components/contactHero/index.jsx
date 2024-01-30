@@ -7,10 +7,10 @@ export const ContactHero = () => {
         <div className="contact-hero-inner">
          <div className="contact-hero-box">
          <button className="contact-hero-btn">
-            Contact us
+            Bog'lanish
           </button>
           <h2 className="contact-hero-title">
-          CONTACT US
+          Bog'lanish
           </h2>
          </div>
         </div>
