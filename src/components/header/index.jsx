@@ -43,7 +43,7 @@ export const Header = () => {
                 </li>
               </ul>
             </nav>
-            <button className="header-btn"><IoMdContact style={{fontSize: "20px", marginRight: "10px"}}/> Contact</button>
+            <NavLink to={'/contact'} className="header-btn"><IoMdContact style={{fontSize: "20px", marginRight: "10px"}}/> Contact</NavLink>
           </div>
         </div>
       </div>

@@ -1,0 +1,36 @@
+.contact-hero {
+  background-image: url(../../assets/img/property-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.contact-hero-inner {
+  padding: 150px 0;
+  text-align: center;
+}
+.contact-hero-btn {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-hero-title {
+  font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-hero-box {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  z-index: 5;
+}
