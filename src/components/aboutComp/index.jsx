@@ -9,13 +9,9 @@ export const AboutComp = () => {
         <div className="about-inner">
           <div className="about-box">
             <p className="about-p">Biz haqimizda</p>
-            <h2 className="about-tile">Createx Online School</h2>
+            <h2 className="about-tile">Yangiliklardan xabardor bo'ling</h2>
             <p className="about-text">
-              We provide relevant approaches to online learning, internships and
-              employment in the largest companies in the country. Our
-              educational programs help you get a new specialty from scratch.
-              During your studies, we will help you find a job. Check the
-              courses and online events that we organise.
+              Maqsadimiz hozirda ushbu loyihani qilish yordamida insonlar fikr-mulohazalarini tahlil qilgan holatda, startup bo'la oladigan kuchliroq platforma yaratishdir.Sizning fikringiz biz uchun muhim.
             </p>
             <NavLink to={'/contact'} className="header-btn about-btn">Bog'lanish</NavLink>
           </div>
