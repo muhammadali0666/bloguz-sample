@@ -1,0 +1,29 @@
+.faq-inner {
+  padding-top: 100px;
+}
+.faq-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.accardion {
+  padding: 30px;
+}
+
+.accardion-typograpy {
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 900;
+  color: #1e1e1e;
+}
+.accardion-typograpy:hover {
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 900;
+  color: #af2c2c;
+}
+.accardion-text {
+  color: #7d7c7c;
+  font-weight: 700;
+}

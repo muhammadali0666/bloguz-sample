@@ -13,9 +13,7 @@ export const Contact = () => {
           width="600"
           height="450"
           style={{border:"0px", borderRadius: "16px", width: "100%", height: "50vh"}}
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </Layouts>

@@ -39,40 +39,40 @@ export const ContactMain = () => {
           <div className="contact-main-right">
             <form className="contact-form">
               <fieldset>
-                <label for="name">Full Name</label>
+                <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
                   placeholder="Your Name..."
-                  autocomplete="on"
+                  autoComplete="on"
                   required
                 />
               </fieldset>
               <fieldset>
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Your Email..."
-                  autocomplete="on"
+                  autoComplete="on"
                   required
                 />
               </fieldset>
               <fieldset>
-                <label for="subject">Subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input
                   type="text"
                   name="subject"
                   id="subject"
                   placeholder="Subject..."
-                  autocomplete="on"
+                  autoComplete="on"
                   required
                 />
               </fieldset>
               <fieldset>
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   placeholder="YourMessage..."
                   cols="30"
