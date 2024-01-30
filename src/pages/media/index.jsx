@@ -1,9 +1,20 @@
-import { Layouts } from "../../components/layouts"
+import { Layouts } from "../../components/layouts";
+import { MediaComp } from "../../components/mediaComp";
 
 export const Media = () => {
   return (
     <Layouts>
-      <h1>Media</h1>
+      <section className="contact-hero">
+        <div className="container">
+          <div className="contact-hero-inner">
+            <div className="contact-hero-box">
+              <button className="contact-hero-btn">Rasmlar</button>
+              <h2 className="contact-hero-title">Baham ko'rilgan rasmlar</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <MediaComp />
     </Layouts>
-  )
-}
+  );
+};

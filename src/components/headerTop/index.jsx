@@ -5,6 +5,8 @@ import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdFeedback } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 export const HeaderTop = () => {
   return (
@@ -22,6 +24,11 @@ export const HeaderTop = () => {
           </a>
          </div>
          <div className="header-top-right">
+          <div className="header-top-auth">
+            <MdFeedback style={{fontSize: "20px"}}/>
+            <NavLink to={'/login'} className="header-top-lgoin">Log in</NavLink>
+            <NavLink to={'/register'} className="header-top-lgoin">Register</NavLink>
+          </div>
           <ul className="header-top-list">
             <li className="header-top-item">
               <a target="_blank" href="https://www.facebook.com/profile.php?id=100076524691842&mibextid=ZbWKwL" className="header-top-item-link">

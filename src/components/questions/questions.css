@@ -19,8 +19,8 @@
 }
 .accardion-typograpy:hover {
   box-shadow: none;
-  font-size: 17px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight:500;
   color: #af2c2c;
 }
 .accardion-text {

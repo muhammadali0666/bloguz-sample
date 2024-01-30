@@ -54,3 +54,18 @@
   background-color: transparent;
   box-shadow: 0px 0px 4px 2px rgb(0, 0, 0);
 }
+.header-top-auth {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.header-top-lgoin {
+  margin-left: 10px;
+  color: #000;
+  font-weight: 600;
+}
+.header-top-lgoin:hover {
+  margin-left: 10px;
+  color: #8e8d8d;
+  font-weight: 600;
+}

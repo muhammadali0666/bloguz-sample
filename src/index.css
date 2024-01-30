@@ -50,6 +50,7 @@
   --bs-primary-bg-subtle: #cfe2ff;
   --bs-secondary-bg-subtle: #f8f9fa;
   --bs-success-bg-subtle: #d1e7dd;
+  --primary-color: #323336;
 }
 
 body {
@@ -77,4 +78,7 @@ ol {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
+}
+h3 {
+  color: var(--primary-color);
 }

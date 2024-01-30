@@ -1,3 +1,7 @@
+:root{
+  --primary-color: #323336;
+}
+
 .contact-main-inner {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -8,11 +12,11 @@
   width: 48%;
 }
 .contact-main-mini-p {
-  color: #0072E5;
+  color: var(--primary-color);
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 900;
-  border-left: 3px solid #0072E5;
+  border-left: 3px solid var(--primary-color);
   padding-left: 10px;
 }
 .contact-main-title {
@@ -44,7 +48,7 @@ max-width: 60%;
 .contact-icon {
   font-size: 50px;
   margin-right: 20px;
-  color: #0072E5;
+  color: var(--primary-color);
 }
 .contact-main-card-title {
   color: #1e1e1e;
@@ -67,19 +71,19 @@ max-width: 60%;
   background-color: #fff;
 }
 .contact-btn {
-  background-color: #0072E5;
+  background-color: var(--primary-color);
   height: 44px;
   border-radius: 22px;
   padding: 0px 20px;
   color: #fff;
-  border: 2px solid #0072E5;
+  border: 2px solid var(--primary-color);
   font-size: 15px;
   font-weight: 500;
   transition: all .5s;
 }
 .contact-btn:hover {
   background-color: #ffffff;
-  color: #0072E5;
+  color: var(--primary-color);
 }
 label {
   font-size: 15px;
