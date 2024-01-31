@@ -103,6 +103,7 @@
     box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.1);
     display: block;
     padding-left: 20px;
+    z-index: 5;
   }
   .header-top-inner-extra {
     display: flex;
@@ -116,6 +117,7 @@
     left: 0;
     top: 0;
     height: 100vh;
+    z-index: 4;
   }
   .block {
     display: block;
@@ -199,6 +201,23 @@
     align-items: start;
     width: 30vw;
     display: none;
+  }
+  .header-top-inner {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 70vh;
+    background-color: #ffffff;
+    box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    padding-left: 20px;
+    z-index: 5;
   }
   .header-top-icon {
     font-size: 20px;
