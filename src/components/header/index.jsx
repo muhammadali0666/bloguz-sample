@@ -2,12 +2,22 @@ import "./header.css";
 import Logo from "../../assets/img/logo.png";
 import { NavLink } from "react-router-dom";
 import { IoMdContact } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+import { FaRegWindowClose } from "react-icons/fa";
 
 export const Header = () => {
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal((item) => !item);
+  };
   return (
-    <header className="header">
+    <header className={modal ? "header-extra" : "header"}>
       <div className="container">
-        <div className="header-inner">
+        <GiHamburgerMenu className="hamburger-header" onClick={handleModal} />
+        <div className={modal ? "" : "header-inner"}>
+              <FaRegWindowClose className="hamburger-header" style={{background: "#fff"}} onClick={handleModal}/>
           <NavLink to={"/"} className="header-logo-link">
             <img
               src={Logo}
