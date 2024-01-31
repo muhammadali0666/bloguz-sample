@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <Layouts>
       <Hero/>
-      {/* <News/> */}
+      <News/>
     </Layouts>
   )
 }
