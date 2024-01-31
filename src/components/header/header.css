@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   z-index: 2;
+  background-color: #fff;
 }
 .header-inner {
   display: flex;
@@ -68,19 +69,19 @@
 }
 @media (max-width: 870px) {
   .header {
-    position: absolute;
-    left: 50%;
+    left: 100%;
     top: 0px;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     padding-top: 20px;
+    background-color: transparent;
   }
   .header-extra {
-    position: absolute;
-    right: 0%;
+    position: sticky;
+    left: 100%;
     top: 0px;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     padding-top: 20px;
     background-color: #fff;
     box-shadow: 2px 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -144,26 +145,34 @@
   .header-list {
     text-align: end;
   }
+  .header-item {
+    margin-top: 15px;
+  }
+  .header-item-link {
+    font-size: 15px;
+    line-height: 15px;
+  }
   .header-extra {
-    position: absolute;
-    right: 0%;
+    position: sticky;
+    left: 100%;
     top: 0px;
-    width: 70%;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     padding-top: 20px;
     background-color: #fff;
     box-shadow: 2px 0px 5px 10px rgba(0, 0, 0, 0.1);
     padding-right: 0px;
   }
   .header-btn {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: none;
     border-radius: 20px;
     padding-left: 0px;
-    padding: 6px 12px;
+    padding: 4px 10px;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 0px;
+    margin-top: 30px;
   }
   .hamburger-header {
     font-size: 20px;

@@ -28,7 +28,8 @@ export const HeaderTop = () => {
               : 
               <IoShareSocial className="hamburger" onClick={handleModal}/>
             }
-        <div className={modal ? "" : "header-top-inner"}>
+        <div className={modal ? "header-top-inner" : "header-top-inner-extra"}>
+        <FaRegWindowClose className="hamburger" onClick={handleModal}/>
           <div className="header-top-left">
             <a
               className="header-top-link"
@@ -36,7 +37,9 @@ export const HeaderTop = () => {
               href="https://muhammadalishuhratjonov50@gmail.com"
             >
               <MdEmail className="header-top-icon"/>
+              <span>
               mshuhratjonov@gmail.com
+              </span>
             </a>
             <a
               className="header-top-link header-top-link-extra"
@@ -44,7 +47,9 @@ export const HeaderTop = () => {
               href="https://maps.app.goo.gl/4aXR1PSWbjtwioj47"
             >
               <FaMap className="header-top-icon" />
+              <span>
               Samarqand. sh
+              </span>
             </a>
           </div>
           <div className="header-top-right">

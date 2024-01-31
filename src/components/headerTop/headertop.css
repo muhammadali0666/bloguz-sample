@@ -7,6 +7,12 @@
   justify-content: space-between;
   padding: 20px 0;
 }
+.header-top-inner-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
 .header-top-left {
   display: flex;
   align-items: center;
@@ -80,17 +86,36 @@
 @media (max-width: 870px) {
   .header-top {
     border-bottom: none;
+    position: relative;
   }
   .header-top-inner {
     display: flex;
     align-items: start;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 0;
-    display: none;
+    padding-top: 20px;
+    width: 50%;
     position: absolute;
+    left: 0%;
+    top: 0;
+    height: 50vh;
+    background-color: #ffffff;
+    box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    padding-left: 20px;
+  }
+  .header-top-inner-extra {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    padding-top: 20px;
+    width: 40%;
+    position: sticky;
     left: 0;
     top: 0;
+    height: 100vh;
   }
   .block {
     display: block;
@@ -154,6 +179,70 @@
   }
   .header-top-lgoin {
     margin-left: 10px;
+  }
+  .header-top-lgoin:hover {
+    margin-left: 10px;
+  }
+  .hamburger {
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-top-link span{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30vw;
+    display: none;
+  }
+  .header-top-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .header-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  .header-top-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  .header-top-item {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .header-top-item:nth-child(1) {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  .header-top-item-link {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-top-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 30px;
+  }
+  .header-top-lgoin {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
   }
   .header-top-lgoin:hover {
     margin-left: 10px;

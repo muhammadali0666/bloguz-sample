@@ -5,8 +5,8 @@ import { News } from "../../components/news"
 export const Home = () => {
   return (
     <Layouts>
-      {/* <Hero/>
-      <News/> */}
+      {/* <Hero/> */}
+      {/* <News/> */}
     </Layouts>
   )
 }
