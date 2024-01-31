@@ -7,8 +7,8 @@ export const About = () => {
   return (
     <Layouts>
       <AboutComp />
-      {/* <Intro /> */}
-      {/* <Feedback/> */}
+      <Intro />
+      <Feedback/>
     </Layouts>
   );
 };
