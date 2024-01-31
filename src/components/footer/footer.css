@@ -13,3 +13,20 @@
   font-size: 16px;
   font-weight: 400;
 }
+@media (max-width: 900px) {
+  .footer {
+    margin-top: 80px;
+    background-color: #1e1e1e;
+  }
+  .footer-inner {
+    padding: 70px 0;
+  }
+  
+  .footer-text {
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
