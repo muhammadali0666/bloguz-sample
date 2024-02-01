@@ -17,19 +17,21 @@ export const ContactMain = () => {
             <p className="contact-left-p">
               Bizga xatolar va takliflar bo'yicha va imloviy xatolar topsangiz biz bilan bog'lanishingiz mumkin murojatingizdan xursand bo'lamiz.
             </p>
-            <div className="contact-main-card">
+            <div className="contact-wrapper">
+            <div className="contact-main-card contact-main-card-extra">
               <IoCall className="contact-icon" />
               <a target="_blank" href="tel:+998904565025" className="contact-main-card-box">
                 <h4 className="contact-main-card-title">(90)456-50-25</h4>
                 <p className="contact-main-card-text">Telefon raqam</p>
               </a>
             </div>
-            <div className="contact-main-card">
+            <div className="contact-main-card contact-main-card-extra">
               <RiMessage3Fill className="contact-icon" />
               <a href="mailto:muhammadalishuhratjonov50@gmail.com" className="contact-main-card-box">
                 <h4 className="contact-main-card-title">msh@gmail.com</h4>
                 <p className="contact-main-card-text">Email</p>
               </a>
+            </div>
             </div>
           </div>
           <div className="contact-main-right">
