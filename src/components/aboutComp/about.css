@@ -43,7 +43,8 @@ margin-bottom: 40px;
   border-radius: 50%;
 }
 .about-img:hover {
-  filter: contrast(2);
+  filter: contrast(1.5);
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 870px) {
   .about-inner {

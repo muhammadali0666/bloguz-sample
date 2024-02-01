@@ -14,7 +14,7 @@ export const Media = () => {
           </div>
         </div>
       </section>
-      <MediaComp />
+      {/* <MediaComp /> */}
     </Layouts>
   );
 };
