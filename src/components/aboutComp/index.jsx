@@ -1,5 +1,5 @@
 import "./about.css";
-import AboutImg from "../../assets/img/about-bg.png";
+import AboutImg from "../../assets/img/my-photo.jpg";
 import { NavLink } from "react-router-dom";
 
 export const AboutComp = () => {
@@ -19,7 +19,7 @@ export const AboutComp = () => {
               Bog'lanish
             </NavLink>
           </div>
-          <img src={AboutImg} alt="img" className="about-img" />
+          <img src={AboutImg} alt="img" className="about-img" width={500} height={500}/>
         </div>
       </div>
     </section>

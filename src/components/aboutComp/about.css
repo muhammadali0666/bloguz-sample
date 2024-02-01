@@ -39,7 +39,7 @@ margin-bottom: 40px;
   font-weight: 700;
 }
 .about-img {
-  width: 50%;
+  /* max-width: 500px; */
   border-radius: 50%;
 }
 .about-img:hover {
@@ -82,11 +82,10 @@ margin-bottom: 40px;
     margin: 0 auto;
   }
   .about-img {
-    width: 50%;
     border-radius: 50%;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .about-inner {
     padding-top: 20px;
     padding-bottom: 60px;
@@ -124,6 +123,7 @@ margin-bottom: 40px;
   }
   .about-img {
     width: 80%;
+    height: auto;
     border-radius: 50%;
   }
 }
