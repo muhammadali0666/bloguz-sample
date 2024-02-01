@@ -1,0 +1,257 @@
+.news-inner {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.news-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin-left: 20px;
+}
+.news-btn:hover {
+  color: #fd7e14;
+}
+.news-btn:active {
+  color: #fff;
+  background-color: #f35525;
+}
+.news-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.news-item {
+  width: 31%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.news-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+.news-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-box {
+  padding: 20px;
+}
+.card-title {
+  color: #1e1e1e;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 18px;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+.card-bottom {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-time {
+  font-weight: 600;
+  color: #797878;
+}
+.card-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #000;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 13px;
+  border: #000 2px solid;
+}
+.card-btn:hover {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #000000;
+}
+.card-arrow {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.card-bottom-list {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.card-bottom-item {
+  margin-left: 10px;
+}
+.card-bottom-item:nth-child(1) {
+  margin-left: 0px;
+}
+.card-page {
+  background-color: #000;
+  color: #ffffff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-page:hover {
+  background-color: #000;
+  color: #fd7e14;
+}
+.card-page:active {
+  background-color: #f35525;
+  color: #ffffff;
+}
+
+@media (max-width: 1070px) {
+  .news-item {
+    width: 45%;
+  }
+}
+@media (max-width: 900px) {
+  .news-inner {
+    padding-top: 80px;
+  }
+  .news-item {
+    width: 45%;
+  }
+  .news-box {
+    margin-bottom: 40px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .card-page {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .card-bottom-list {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .news-inner {
+    padding-top: 80px;
+  }
+  .news-btn {
+    padding: 8px 12px;
+  }
+  .news-item {
+    width: 70%;
+  }
+  .card-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .card-arrow {
+    font-size: 15px;
+  }
+  .news-box {
+    margin-bottom: 40px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .card-page {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .card-bottom-list {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .news-inner {
+    padding-top: 80px;
+  }
+  .news-btn {
+    width: 40%;
+    padding: 8px 12px;
+  }
+  .news-item {
+    width: 90%;
+  }
+  .card-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .card-arrow {
+    font-size: 15px;
+  }
+  .news-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .card-page {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .card-bottom-list {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .news-inner {
+    padding-top: 60px;
+  }
+  .news-btn {
+    width: 100%;
+    padding: 8px 12px;
+    margin-left: 0;
+  }
+  .news-item {
+    width: 90%;
+  }
+  .card-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .card-arrow {
+    font-size: 15px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .news-box {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

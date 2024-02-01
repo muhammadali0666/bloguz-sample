@@ -1,0 +1,130 @@
+.about-inner {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-box {
+  max-width: 600px;
+}
+.about-p {
+  color: var(--gray-900, #1E212C);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 24px */
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.about-tile {
+  color: var(--gray-900, #1E212C);
+font-size: 46px;
+font-style: normal;
+font-weight: 900;
+line-height: 130%; /* 59.8px */
+margin-bottom: 48px;
+}
+.about-text {
+  color: var(--gray-800, #424551);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+margin-bottom: 40px;
+}
+.about-btn {
+  width: max-content;
+  margin-left: 0;
+  font-weight: 700;
+}
+.about-img {
+  /* max-width: 500px; */
+  border-radius: 50%;
+}
+.about-img:hover {
+  filter: contrast(1.5);
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 870px) {
+  .about-inner {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-box {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .about-p {
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+  .about-tile {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 100%; 
+  margin-bottom: 28px;
+  }
+  .about-text {
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 40px;
+  }
+  .about-btn {
+    width: max-content;
+    margin-left: 0;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  .about-img {
+    border-radius: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .about-inner {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-box {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .about-p {
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+  .about-tile {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 100%; 
+  margin-bottom: 18px;
+  }
+  .about-text {
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 30px;
+  }
+  .about-btn {
+    width: max-content;
+    margin-left: 0;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  .about-img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
