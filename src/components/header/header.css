@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -69,19 +69,18 @@
 }
 @media (max-width: 870px) {
   .header {
-    left: 100%;
+    left: 50%;
     top: 0px;
     width: 50%;
-    height: 100px;
     padding-top: 20px;
     background-color: transparent;
   }
   .header-extra {
-    position: sticky;
-    left: 100%;
-    top: 0px;
+    position: fixed;
+    left: 50%;
+    top: 0%;
     width: 50%;
-    height: auto;
+    height: 100vh;
     padding-top: 20px;
     background-color: #fff;
     box-shadow: 2px 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -155,15 +154,17 @@
     line-height: 15px;
   }
   .header-extra {
-    position: sticky;
-    left: 100%;
-    top: 0px;
+    position: fixed;
+    left: 50%;
+    top: 0%;
     width: 50%;
     height: 100vh;
     padding-top: 20px;
     background-color: #fff;
     box-shadow: 2px 0px 5px 10px rgba(0, 0, 0, 0.1);
-    padding-right: 0px;
+    padding-right: 20px;
+    z-index: 3;
+    padding-bottom: 20px;
   }
   .header-btn {
     font-size: 12px;

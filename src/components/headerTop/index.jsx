@@ -26,7 +26,7 @@ export const HeaderTop = () => {
               modal ?
               <FaRegWindowClose className="hamburger" onClick={handleModal}/>
               : 
-              <IoShareSocial className="hamburger" onClick={handleModal}/>
+              <IoShareSocial className="hamburger hamburger-next" onClick={handleModal}/>
             }
         <div className={modal ? "header-top-inner" : "header-top-inner-extra"}>
         <FaRegWindowClose className="hamburger" onClick={handleModal}/>

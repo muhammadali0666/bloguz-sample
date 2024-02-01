@@ -1,5 +1,6 @@
 .header-top {
   border-bottom: 1px solid #eee;
+  margin-top: 100px;
 }
 .header-top-inner {
   display: flex;
@@ -87,6 +88,7 @@
   .header-top {
     border-bottom: none;
     position: relative;
+    margin-top: 80px;
   }
   .header-top-inner {
     display: flex;
@@ -95,10 +97,10 @@
     justify-content: space-between;
     padding-top: 20px;
     width: 50%;
-    position: absolute;
-    left: 0%;
-    top: 0;
-    height: 50vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
     background-color: #ffffff;
     box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.1);
     display: block;
@@ -113,9 +115,9 @@
     display: none;
     padding-top: 20px;
     width: 40%;
-    position: sticky;
-    left: 0;
-    top: 0;
+    position: fixed;
+    left: 0px;
+    top: 0px;
     height: 100vh;
     z-index: 4;
   }
@@ -188,7 +190,14 @@
   .hamburger {
     font-size: 25px;
     display: block;
-    position: absolute;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+  }
+  .hamburger-next {
+    font-size: 25px;
+    display: block;
+    position: fixed;
     left: 20px;
     top: 20px;
   }
@@ -209,15 +218,29 @@
     justify-content: space-between;
     padding-top: 20px;
     width: 50%;
-    position: absolute;
-    left: 0%;
-    top: 0;
-    height: 70vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
     background-color: #ffffff;
     box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.1);
     display: block;
     padding-left: 20px;
     z-index: 5;
+  }
+  .header-top-inner-extra {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    padding-top: 20px;
+    width: 40%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: 4;
   }
   .header-top-icon {
     font-size: 20px;
@@ -270,6 +293,13 @@
     font-size: 25px;
     display: block;
     position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .hamburger-next {
+    font-size: 25px;
+    display: block;
+    position: fixed;
     left: 20px;
     top: 20px;
   }

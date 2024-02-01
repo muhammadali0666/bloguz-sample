@@ -6,8 +6,8 @@ import "./index.css";
 export const Layouts = ({ children }) => {
   return (
     <>
-      <HeaderTop />
       <Header />
+      <HeaderTop />
       <main>{children}</main>
       <Footer />
     </>
