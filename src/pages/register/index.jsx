@@ -2,25 +2,32 @@ import { NavLink } from "react-router-dom";
 import "./register.css";
 import {auth, provider} from "./googleConfig"
 import {signInWithPopup} from "firebase/auth"
-import { useEffect, useState } from "react";
 import { FaGooglePlusG } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
+  const navigate = useNavigate()
 
-  const [value, setValue] = useState('')
-  const [name, setName] = useState('')
-
-  const handleClick = () => {
-    signInWithPopup(auth, provider).then((data) => {
-      setValue(data.user.email)
-      setName(data.user.displayName)
-    })
-  }
-
-useEffect(() => {
-  console.log(value);
-  console.log(name);
-},[value])
+    const handleClick = () => {
+      signInWithPopup(auth, provider).then((data) => {
+        localStorage.setItem("token", data.user.accessToken)
+        fetch(import.meta.env.VITE_APP_BASE_URL + "/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            fullName: data.user.displayName,
+            profilePhoto: data.user.providerData[0].photoURL,
+            email: data.user.email
+          })
+        }).then((res) => res.json())
+        .then((data) => {
+          // alert(data.msg)
+          localStorage.getItem("token")  ? navigate("/") : navigate("/register")
+        })
+      })
+    }
 
   return (
     <div className="container">
