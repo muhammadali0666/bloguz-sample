@@ -23,7 +23,7 @@ export const Register = () => {
           })
         }).then((res) => res.json())
         .then((data) => {
-          // alert(data.msg)
+          alert(data.msg)
           localStorage.getItem("token")  ? navigate("/") : navigate("/register")
         })
       })
