@@ -1,15 +1,35 @@
-import { NavLink } from "react-router-dom"
-import "./login.css"
+import { NavLink } from "react-router-dom";
+import "./login.css";
+import {auth, provider} from "./googleConfig"
+import {signInWithPopup} from "firebase/auth"
+import { useEffect, useState } from "react";
 
 export const Login = () => {
+
+  const [value, setValue] = useState('')
+  const [name, setName] = useState('')
+
+  const handleClick = () => {
+    signInWithPopup(auth, provider).then((data) => {
+      setValue(data.user.email)
+      setName(data.user.displayName)
+    })
+  }
+
+useEffect(() => {
+  console.log(value);
+  console.log(name);
+},[value])
+
   return (
     <div className="container">
-    <div className="register-inner">
-      <h2 className="register-title">Tizimga kirish</h2>
-      <p className="register-title-p">
-      Ro'yxatdan o'tish paytida taqdim etilgan elektron pochta va parol yordamida hisobingizga kiring.
-      </p>
-      <form className="register">
+      <div className="register-inner">
+        <h2 className="register-title">Tizimga kirish</h2>
+        <p className="register-title-p">
+          Ro'yxatdan o'tish paytida taqdim etilgan elektron pochta va parol
+          yordamida hisobingizga kiring.
+        </p>
+        <div className="form">
         <fieldset className="fieldset">
           <label htmlFor="email" className="register-label">
             Email
@@ -33,11 +53,20 @@ export const Login = () => {
           />
         </fieldset>
         <p className="register-text">
-          Ro'yxatdan o'tmaganmisiz? <NavLink className="register-link" to={"/register"}>Sign up</NavLink>
+          Ro'yxatdan o'tmaganmisiz?{" "}
+          <NavLink className="register-link" to={"/register"}>
+            Sign up
+          </NavLink>
         </p>
-      </form>
         <button className="register-btn">Ro'yxatdan o'tish</button>
+        </div>
+        <button
+        onClick={handleClick}
+          style={{ background: "red", padding: "10px 20px" }}
+        >
+          Sign in with google
+        </button>
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
