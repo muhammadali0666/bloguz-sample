@@ -5,6 +5,21 @@
   justify-content: center;
   margin-top: 10%;
 }
+.google-button {
+  background-color: #323336;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.google-icon {
+  margin-right: 20px;
+  font-size: 30px;
+}
 .register-title {
   color: var(--gray-900, #1E212C);
 text-align: center;
