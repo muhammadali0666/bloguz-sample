@@ -1,33 +1,34 @@
 import { NavLink } from "react-router-dom";
 import "./register.css";
-import {auth, provider} from "./googleConfig"
-import {signInWithPopup} from "firebase/auth"
+import { auth, provider } from "./googleConfig";
+import { signInWithPopup } from "firebase/auth";
 import { FaGooglePlusG } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-    const handleClick = () => {
-      signInWithPopup(auth, provider).then((data) => {
-        localStorage.setItem("token", data.user.accessToken)
-        fetch(import.meta.env.VITE_APP_BASE_URL + "/register", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            fullName: data.user.displayName,
-            profilePhoto: data.user.providerData[0].photoURL,
-            email: data.user.email
-          })
-        }).then((res) => res.json())
-        .then((data) => {
-          alert(data.msg)
-          localStorage.getItem("token")  ? navigate("/") : navigate("/register")
-        })
+  const handleClick = async () => {
+    await signInWithPopup(auth, provider).then((data) => {
+      localStorage.setItem("token", data.user.accessToken);
+      fetch(import.meta.env.VITE_APP_BASE_URL + "/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: data.user.displayName,
+          profilePhoto: data.user.providerData[0].photoURL,
+          email: data.user.email,
+        }),
       })
-    }
+        .then((res) => res.json())
+        .then((data) => {
+          alert(data.msg);
+          localStorage.getItem("token") ? navigate("/") : navigate("/register");
+        });
+    });
+  };
 
   return (
     <div className="container">
@@ -72,15 +73,15 @@ export const Register = () => {
             />
           </fieldset> */}
         </div>
-          {/* <button className="register-btn">Ro'yxatdan o'tish</button> */}
-          <p className="register-text">
-            Ro'yxatdan o'tganmisiz? <NavLink className="register-link" to={"/login"}>Sign in</NavLink>
-          </p>
-          <button
-        onClick={handleClick}
-          className="google-button"
-        >
-        <FaGooglePlusG className="google-icon"/>  Sign in with google
+        {/* <button className="register-btn">Ro'yxatdan o'tish</button> */}
+        <p className="register-text">
+          Ro'yxatdan o'tganmisiz?{" "}
+          <NavLink className="register-link" to={"/login"}>
+            Sign in
+          </NavLink>
+        </p>
+        <button onClick={handleClick} className="google-button">
+          <FaGooglePlusG className="google-icon" /> Sign in with google
         </button>
       </div>
     </div>
