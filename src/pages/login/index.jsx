@@ -27,9 +27,30 @@ export const Login = () => {
           alert(data.msg);
           if(data.token) {
             localStorage.setItem("token", data.token)
+            navigate("/")
           }
         });
     });
+  };
+
+  const handleLogin = () => {
+      fetch(import.meta.env.VITE_APP_BASE_URL + "/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          alert(data.msg);
+          if(data.token) {
+            localStorage.setItem("token", data.token)
+            navigate("/")
+          }
+        });
   };
 
   return (
@@ -50,6 +71,9 @@ export const Login = () => {
               className="register-input"
               id="email"
               placeholder="Email..."
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </fieldset>
           <fieldset className="fieldset">
@@ -70,7 +94,7 @@ export const Login = () => {
             </NavLink>
           </p>
           <div className="register-btn-box">
-            <button className="register-btn">Ro'yxatdan o'tish</button>
+            <button className="register-btn" onClick={handleLogin}>Ro'yxatdan o'tish</button>
             <button onClick={handleClick} className="google-button">
               <FaGooglePlusG className="google-icon" /> Sign in with google
             </button>
