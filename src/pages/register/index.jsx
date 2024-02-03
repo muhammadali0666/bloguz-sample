@@ -81,7 +81,7 @@ export const Register = () => {
           </NavLink>
         </p>
         <button onClick={handleClick} className="google-button">
-          <FaGooglePlusG className="google-icon" /> Sign in with google
+          <FaGooglePlusG className="google-icon" /> Sign up with google
         </button>
       </div>
     </div>
