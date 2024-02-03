@@ -8,7 +8,7 @@ export const AdminNavbar = () => {
       <div className="admin-navbar">
         <div className="container">
           <div className="admin-navbar-inner">
-            <Link className="admin-navbar-logo-link">
+            <Link className="admin-navbar-logo-link" to={"/"}>
               <MdOutlineDashboardCustomize className="admin-navbar-logo"/>
             </Link>
             <nav className="addmin-navbar-nav">

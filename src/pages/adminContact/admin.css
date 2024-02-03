@@ -1,0 +1,27 @@
+.admin-contac-inner {
+  padding-top: 100px;
+}
+.admin-contact-title {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+.admin-contact-header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.admin-contact-body {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.admin-contact-delete {
+  font-size: 25px;
+}
+.admin-contact-table {
+  box-shadow: 0px 0px 10px 4px rgba(135, 134, 134, 0.1);
+}
