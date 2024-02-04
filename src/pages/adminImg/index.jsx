@@ -43,8 +43,8 @@ export const AdminImg = () => {
             <button className="admin-img-add-btn">qo'shish</button>
           </div>
         </div>
-        <h2 className="admin-img-title-bottom">Rasmlarni boshqarish</h2>
         <TableContainer component={Paper} className="admin-img-table">
+        <h2 className="admin-img-title-bottom">Rasmlarni boshqarish</h2>
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
               <TableRow>

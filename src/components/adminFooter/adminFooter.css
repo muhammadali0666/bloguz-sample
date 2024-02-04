@@ -1,0 +1,13 @@
+.admin-footer {
+  background-color: var(--bs-cyan);
+  margin-top: 300px;
+}
+.admin-footer-inner {
+  padding: 100px 0;
+}
+.footer-text-admin {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--bs-light);
+}

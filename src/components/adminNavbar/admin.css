@@ -81,7 +81,7 @@
   margin-left: 0px;
 }
 .admin-navbar-item-link {
-  color: var(--bs-gray-100);
+  color: var(--bs-light);
   font-size: 18px;
   padding-bottom: 5px;
   font-weight: 600;

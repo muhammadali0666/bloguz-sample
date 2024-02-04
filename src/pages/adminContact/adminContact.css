@@ -1,5 +1,9 @@
 .admin-contac-inner {
   padding-top: 100px;
+  box-shadow: 0px 0px 10px 2px rgba(160, 160, 160, 0.3) !important;
+  border-radius: 16px !important;
+  padding: 40px !important;
+  margin-top: 100px !important;
 }
 .admin-contact-title {
   margin-bottom: 40px;

@@ -1,3 +1,4 @@
+import { AdminFooter } from "../../components/adminFooter"
 import { AdminNavbar } from "../../components/adminNavbar"
 
 export const Admin = () => {
@@ -8,6 +9,7 @@ export const Admin = () => {
       </div>
     </div>
         <AdminNavbar/>
+        <AdminFooter/>
    </div>
   )
 }
