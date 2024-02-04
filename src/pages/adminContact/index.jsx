@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import "./admin.css"
+import "./adminContact.css"
 
 export const AdminContact = () => {
   return (

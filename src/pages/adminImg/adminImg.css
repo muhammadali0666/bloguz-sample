@@ -1,0 +1,61 @@
+.admin-img-inner {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-img-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.admin-img-upload {
+  width: max-content;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 8px;
+  height: 40px;
+  padding-top: 7px;
+}
+.admin-img-box {
+  display: flex;
+  align-items: center;
+}
+.admin-img-add-btn {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: var(--bs-cyan);
+  color: var(--bs-light);
+  border: var(--bs-cyan);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-img-title-bottom {
+  margin-top: 100px;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.admin-img-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  text-align: center;
+}
+.admin-img-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+.admin-img-body {
+  font-size: 20px;
+  text-align: center;
+}
+.admin-img-delete {
+  font-size: 25px;
+}

@@ -54,8 +54,8 @@
 }
 
 .admin-navbar {
-background-color: var(--bs-cyan);
-color: var(--bs-gray-100);
+  background-color: var(--bs-cyan);
+  color: var(--bs-gray-100);
 }
 .admin-navbar-logo-link {
   color: var(--bs-gray-100);
@@ -77,7 +77,7 @@ color: var(--bs-gray-100);
 .admin-navbar-item {
   margin-left: 50px;
 }
-.admin-navbar-item:nth-child(1){
+.admin-navbar-item:nth-child(1) {
   margin-left: 0px;
 }
 .admin-navbar-item-link {
@@ -93,17 +93,17 @@ color: var(--bs-gray-100);
 }
 .admin-navbar-btn {
   color: var(--bs-light);
-font-size: 18px;
-padding: 10px 25px;
-border-radius: 16px;
-background-color: transparent;
-border: 3px solid var(--bs-gray-100);
-font-weight: 600;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 3px solid var(--bs-gray-100);
+  font-weight: 600;
 }
 .admin-navbar-btn:hover {
   color: var(--bs-cyan);
-font-size: 18px;
-background-color: var(--bs-gray-100);
-border: 3px solid var(--bs-gray-100);
-cursor: pointer;
+  font-size: 18px;
+  background-color: var(--bs-gray-100);
+  border: 3px solid var(--bs-gray-100);
+  cursor: pointer;
 }
