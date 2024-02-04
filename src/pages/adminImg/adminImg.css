@@ -43,7 +43,7 @@
   align-items: center;
   margin-bottom: 200px !important;
   text-align: center !important;
-  width: 70% !important;
+  width: 100% !important;
   margin: 100px auto !important;
   box-shadow: 0px 0px 10px 2px rgba(160, 160, 160, 0.3) !important;
   border-radius: 16px !important;
@@ -64,3 +64,123 @@
 .admin-img-delete {
   font-size: 25px !important;
 }
+@media (max-width: 900px) {
+  .admin-img-inner {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px !important;
+    margin-top: 100px;
+  }
+  .admin-img-title {
+    font-size: 26px !important;
+    margin-bottom: 30px !important;
+  }
+  .admin-img-box {
+    display: flex;
+    align-items: center;
+  }
+  .admin-img-add {
+    font-size: 14px !important;
+    line-height: 0.75rem !important;
+  }
+  .admin-img-add-btn {
+    padding: 7px 20px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  
+  .admin-img-title-bottom {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .admin-img-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 100px auto !important;
+    padding: 40px !important;
+    margin-top: 100px !important;
+  }
+  .admin-img-header {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+  .admin-img-body {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .admin-img-delete {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-img-inner {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px !important;
+    margin-top: 100px;
+  }
+  .admin-img-title {
+    font-size: 26px !important;
+    margin-bottom: 20px !important;
+  }
+  .admin-img-box {
+    display: flex;
+    align-items: center;
+  }
+  .admin-img-add {
+    font-size: 14px !important;
+    line-height: 0.75rem !important;
+  }
+  .admin-img-add-btn {
+    padding: 7px 20px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  
+  .admin-img-title-bottom {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .admin-img-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px !important;
+    text-align: start !important;
+    width: 100% !important;
+    margin: 100px auto !important;
+    padding: 0px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    margin-top: 100px !important;
+  }
+  .admin-img-header {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+  .admin-img-body {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .admin-img-delete {
+    font-size: 22px !important;
+  }
+}
+
