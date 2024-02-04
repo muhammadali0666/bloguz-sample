@@ -27,7 +27,6 @@ textarea {
 }
 .admin-news-add-btn {
   padding: 10px 30px;
-  margin-left: 30px;
   border-radius: 10px;
   background-color: var(--bs-cyan);
   color: var(--bs-light);
@@ -35,4 +34,116 @@ textarea {
   font-weight: 400;
   cursor: pointer;
   font-size: 18px;
+}
+@media (max-width: 920px){
+  .admin-news-input-btn {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .admin-news {
+    padding: 40px;
+    margin-top: 80px;
+  }
+  .admin-news-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .admin-news-input-btn {
+    width: 40%;
+  }
+  .admin-news-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .admin-news-input {
+    width: 100%;
+  }
+  .admin-news-add-btn {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 570px) {
+  .admin-news {
+    padding: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin-news-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .admin-news-input-btn {
+    width: 40%;
+    font-size: 14px;
+  }
+  .admin-news-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin-news-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .admin-news-input {
+    width: 100%;
+  }
+  .admin-news-add-btn {
+    padding: 10px 30px;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-left: 35%;
+  }
+}
+@media (max-width: 502px) {
+  .admin-news {
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin-news-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .admin-news-input-btn {
+    width: 60%;
+    font-size: 14px;
+  }
+  .admin-news-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin-news-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .admin-news-input {
+    width: 80%;
+  }
+  .admin-news-add-btn {
+    padding: 10px 30px;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-left: 35%;
+  }
 }

@@ -52,7 +52,14 @@
   --bs-success-bg-subtle: #d1e7dd;
   --primary-color: #323336;
 }
-
+.admin-navbar-hamburger {
+  font-size: 30px;
+  display: none;
+}
+.admin-navbar-close {
+  font-size: 30px;
+  display: none;
+}
 .admin-navbar {
   background-color: var(--bs-cyan);
   color: var(--bs-gray-100);
@@ -137,5 +144,76 @@
     font-size: 16px;
     padding: 7px 15px;
     border: 2px solid var(--bs-gray-100);
+  }
+}
+
+@media (max-width: 570px) {
+  .admin-navbar-logo {
+    font-size: 40px;
+  }
+  .admin-navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  .addmin-navbar-nav {
+    background-color: var(--bs-light);
+    color: var(--bs-cyan);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+  }
+  .addmin-navbar-nav-extra {
+    background-color: var(--bs-light);
+    color: var(--bs-cyan);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    display: none;
+  }
+  .admin-navbar-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .admin-navbar-item {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .admin-navbar-hamburger {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+  .admin-navbar-close {
+    display: block;
+    color: var(--bs-cyan);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .admin-navbar-item-link {
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: var(--bs-cyan);
+  }
+  .admin-navbar-item-link.active {
+    font-size: 18px;
+    color: var(--bs-cyan);
+    border-bottom: 2px solid var(--bs-cyan);
+  }
+  .admin-navbar-btn {
+    font-size: 16px;
+    padding: 7px 15px;
+    border: 2px solid var(--bs-gray-100);
+    margin-right: 50px;
   }
 }
