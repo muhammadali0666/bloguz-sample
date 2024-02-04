@@ -11,6 +11,7 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { MdCloudUpload } from "react-icons/md";
+import { AdminNews } from "../../components/addNews";
 
 export const AdminHome = () => {
   const VisuallyHiddenInput = styled("input")({
@@ -43,6 +44,7 @@ export const AdminHome = () => {
             <button className="admin-home-add-btn">qo'shish</button>
           </div>
         </div>
+        <AdminNews/>
         <h2 className="admin-home-title-bottom">Yangiliklarni boshqarish</h2>
         <TableContainer component={Paper} className="admin-home-table">
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
