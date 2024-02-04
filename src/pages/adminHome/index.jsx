@@ -45,8 +45,8 @@ export const AdminHome = () => {
           </div>
         </div>
         <AdminNews/>
-        <h2 className="admin-home-title-bottom">Yangiliklarni boshqarish</h2>
         <TableContainer component={Paper} className="admin-home-table">
+        <h2 className="admin-home-title-bottom">Yangiliklarni boshqarish</h2>
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
               <TableRow>
