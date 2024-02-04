@@ -12,6 +12,7 @@ import { AdminHome } from "../pages/adminHome";
 import { AdminImg } from "../pages/adminImg";
 import { AdminContact } from "../pages/adminContact";
 import { Single } from "../pages/single";
+import { NotFound } from "../pages/notFound";
 
 export const RouteWrapper = () => {
   return (
@@ -29,6 +30,7 @@ export const RouteWrapper = () => {
         <Route path="admin-photo" element={<AdminImg />} />
         <Route path="admin-contact" element={<AdminContact />} />
       </Route>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
   );
 };
