@@ -11,3 +11,15 @@
   font-weight: 600;
   color: var(--bs-light);
 }
+
+@media (max-width: 800px) {
+  .admin-footer-inner {
+    padding: 60px 0;
+  }
+  .footer-text-admin {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--bs-light);
+  }
+}
