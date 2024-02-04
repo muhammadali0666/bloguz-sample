@@ -15,7 +15,7 @@ export const AdminNavbar = () => {
               <ul className="admin-navbar-list">
                 <li className="admin-navbar-item">
                   <NavLink to={"admin-home"} className="admin-navbar-item-link">
-                    Home
+                    Bosh sahifa
                   </NavLink>
                 </li>
                 <li className="admin-navbar-item">
@@ -23,7 +23,7 @@ export const AdminNavbar = () => {
                     to={"admin-photo"}
                     className="admin-navbar-item-link"
                   >
-                    Photo
+                    Rasm
                   </NavLink>
                 </li>
                 <li className="admin-navbar-item">
@@ -31,12 +31,12 @@ export const AdminNavbar = () => {
                     to={"admin-contact"}
                     className="admin-navbar-item-link"
                   >
-                    Contact
+                    Bog'lanish
                   </NavLink>
                 </li>
               </ul>
             </nav>
-            <button className="admin-navbar-btn">Log out</button>
+            <button className="admin-navbar-btn">Chiqish</button>
           </div>
         </div>
       </div>
