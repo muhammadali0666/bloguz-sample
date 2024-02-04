@@ -1,3 +1,4 @@
+import "./adminImg.css";
 import React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -7,19 +8,39 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import "./adminImg.css";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import { MdCloudUpload } from "react-icons/md";
 
 export const AdminImg = () => {
+  const VisuallyHiddenInput = styled("input")({
+    clip: "rect(0 0 0 0)",
+    clipPath: "inset(50%)",
+    height: 1,
+    overflow: "hidden",
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    whiteSpace: "nowrap",
+    width: 1,
+  });
+
   return (
     <div className="admin-img">
       <div className="container">
         <div className="admin-img-inner">
           <h2 className="admin-img-title">Rasm qo'shish</h2>
           <div className="admin-img-box">
-          <input type="file" className="admin-img-upload" />
-          <button className="admin-img-add-btn">
-            qo'shish
-          </button>
+            <Button
+              component="label"
+              variant="contained"
+              className="admin-img-add"
+              startIcon={<MdCloudUpload />}
+            >
+              Upload file
+              <VisuallyHiddenInput type="file" />
+            </Button>
+            <button className="admin-img-add-btn">qo'shish</button>
           </div>
         </div>
         <h2 className="admin-img-title-bottom">Rasmlarni boshqarish</h2>
@@ -38,7 +59,7 @@ export const AdminImg = () => {
             </TableHead>
             <TableBody>
               <TableRow
-                sx={{ "&:first-child td, &:first-child th": { border: 0 } }}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell
                   className="admin-img-body"

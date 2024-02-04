@@ -1,18 +1,18 @@
-.admin-img-inner {
+.admin-home-inner {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.admin-img-title {
+.admin-home-title {
   font-size: 36px !important;
   margin-bottom: 40px !important;
 }
-.admin-img-box {
+.admin-home-box {
   display: flex;
   align-items: center;
 }
-.admin-img-add-btn {
+.admin-home-add-btn {
   padding: 10px 30px;
   margin-left: 30px;
   border-radius: 10px;
@@ -24,37 +24,37 @@
   font-size: 18px;
 }
 
-.admin-img-add {
+.admin-home-add {
   background-color: var(--bs-cyan) !important;
 }
 
-.admin-img-title-bottom {
+.admin-home-title-bottom {
   margin-top: 100px;
   font-size: 36px;
   margin-bottom: 40px;
   text-align: center;
   margin-top: 200px !important;
 }
-.admin-img-table {
+.admin-home-table {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px !important;
   text-align: center !important;
-  width: 70% !important;
+  width: 100% !important;
   margin: 100px auto !important;
 }
-.admin-img-header {
+.admin-home-header {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
   font-size: 16px !important;
   font-weight: 900 !important;
   text-align: center !important;
 }
-.admin-img-body {
+.admin-home-body {
   font-size: 20px !important;
   text-align: center !important;
 }
-.admin-img-delete {
+.admin-home-delete {
   font-size: 25px !important;
 }

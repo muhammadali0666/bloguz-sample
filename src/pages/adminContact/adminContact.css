@@ -6,18 +6,18 @@
   font-size: 36px;
 }
 .admin-contact-header {
-  padding: 30px 20px;
-  text-align: center;
+  padding: 30px 20px !important;
+  text-align: center !important;
   color: #000;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 600 !important;
+  font-size: 18px !important;
 }
 .admin-contact-body {
-  text-align: center;
-  font-size: 16px;
+  text-align: center !important;
+  font-size: 16px !important;
   font-weight: normal;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 .admin-contact-delete {
   font-size: 25px;
