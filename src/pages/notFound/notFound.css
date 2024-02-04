@@ -14,22 +14,6 @@
   font-size: 160px;
   color: var(--bs-red);
   font-family: "Sixtyfour", sans-serif;
-  animation: infinite text 3s linear;
+  transition: all 3s;
 }
 
-@keyframes text {
-  0% {
-    color: var(--bs-red);
-  }
-  25% {
-    color: rgb(255, 0, 0); 
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-  }
-  50% {
-    color: var(--bs-red);
-  }
-  75% {
-    color: rgb(255, 0, 0);
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-  }
-}
