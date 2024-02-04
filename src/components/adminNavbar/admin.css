@@ -107,3 +107,35 @@
   border: 3px solid var(--bs-gray-100);
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .admin-navbar-logo {
+    font-size: 40px;
+  }
+  .admin-navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  .admin-navbar-list {
+    display: flex;
+    align-items: center;
+  }
+  .admin-navbar-item {
+    margin-left: 30px;
+  }
+  .admin-navbar-item-link {
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: 600;
+  }
+  .admin-navbar-item-link.active {
+    font-size: 18px;
+    border-bottom: 2px solid var(--bs-gray-200);
+  }
+  .admin-navbar-btn {
+    font-size: 16px;
+    padding: 7px 15px;
+    border: 2px solid var(--bs-gray-100);
+  }
+}
