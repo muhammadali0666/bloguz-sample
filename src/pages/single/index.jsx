@@ -3,6 +3,7 @@ import { Layouts } from "../../components/layouts";
 import Img from "../../assets/img/about-bg.png";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import dateFormat, { masks } from "dateformat";
 
 export const Single = () => {
   const [info, setInfo] = useState([]);
@@ -23,7 +24,7 @@ export const Single = () => {
           <h2 className="single-title">{info.title}</h2>
           <p className="single-text">{info.text}</p>
           <div className="single-bottom">
-            <p className="single-date">{info.createdAt.slice(0,10)}</p>
+            <p className="single-date">{dateFormat(info.createdAt)}</p>
           </div>
         </div>
       </div>

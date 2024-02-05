@@ -5,6 +5,7 @@ import { GiNextButton } from "react-icons/gi";
 import { GiPreviousButton } from "react-icons/gi";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import dateFormat, { masks } from "dateformat";
 
 export const News = () => {
   const [posts, setPosts] = useState([]);
@@ -50,7 +51,7 @@ export const News = () => {
                     <h4 className="card-title">{item.title.slice(0,40)}...</h4>
                     <p className="card-text">{item.text.slice(0,100)}...</p>
                     <div className="card-bottom">
-                      <p className="card-time">01.30.2024</p>
+                      <p className="card-time">{dateFormat(item.createdAt)}</p>
                       <NavLink to={`/single/${item.id}`}>
                         <button className="card-btn">
                           ko'proq

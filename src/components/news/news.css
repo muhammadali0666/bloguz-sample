@@ -61,7 +61,9 @@
   justify-content: space-between;
 }
 .card-time {
+  width: 50%;
   font-weight: 600;
+  font-size: 12px;
   color: #797878;
 }
 .card-btn {
