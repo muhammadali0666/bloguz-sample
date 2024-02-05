@@ -24,7 +24,7 @@ export const RouteWrapper = () => {
       <Route path="/media" element={<Media />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/single" element={<Single/>}/>
+      <Route path="/single/:id" element={<Single/>}/>
       <Route path="/admin-page-scret-control" element={<Admin />}>
         <Route path="admin-home" element={<AdminHome />} />
         <Route path="admin-photo" element={<AdminImg />} />
