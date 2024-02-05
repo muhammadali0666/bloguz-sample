@@ -10,10 +10,8 @@ export const News = () => {
       <div className="container">
         <div className="news-inner">
           <div className="news-box">
-            <button className="news-btn">barchasini ko'rish</button>
-            <button className="news-btn">sport</button>
-            <button className="news-btn">siyosat</button>
-            <button className="news-btn">mashxurlar</button>
+            <h2 className="news-box-home-title">Yangiliklar</h2>
+            <input type="text" className="news-box-input" placeholder="qidirish..."/>
           </div>
           <ul className="news-list">
             <li className="news-item">
