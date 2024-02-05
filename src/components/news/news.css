@@ -1,8 +1,5 @@
 .news-inner {
   padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .news-box {
   display: flex;
@@ -17,7 +14,8 @@
 }
 .news-box-input {
   width: 400px;
-  margin-left: 200px;
+  margin-left: auto;
+  margin-bottom: 0;
 }
 .news-btn:active {
   color: #fff;
@@ -94,7 +92,7 @@
 }
 .card-bottom-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-top: 100px;
 }
 .card-bottom-item {
@@ -136,7 +134,7 @@
 
 @media (max-width: 1070px) {
   .news-item {
-    width: 45%;
+    width: 330px;
   }
 }
 @media (max-width: 900px) {
@@ -144,16 +142,31 @@
     padding-top: 80px;
   }
   .news-item {
-    width: 45%;
+    width: 330px;
   }
   .news-box {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .news-box-home-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: start;
+  }
+  .news-box-input {
+    width: 300px;
+    margin-left: auto;
   }
   .card-title {
     font-size: 20px;
     margin-top: 0;
   }
   .card-page {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .card-page-unactive {
     font-size: 15px;
     padding: 10px;
   }
@@ -169,11 +182,23 @@
     padding: 8px 12px;
   }
   .news-item {
-    width: 70%;
+    width: 330px;
   }
   .card-btn {
     padding: 4px 8px;
     font-size: 14px;
+  }
+  .news-box {
+    margin-bottom: 0px;
+  }
+  .news-box-home-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: start;
+  }
+  .news-box-input {
+    width: 200px;
+    margin-left: auto;
   }
   .card-arrow {
     font-size: 15px;
@@ -202,7 +227,7 @@
     padding: 8px 12px;
   }
   .news-item {
-    width: 90%;
+    width: 330px;
   }
   .card-btn {
     padding: 4px 8px;
@@ -223,7 +248,7 @@
     margin-top: 40px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 420px) {
   .news-inner {
     padding-top: 60px;
   }
@@ -231,6 +256,24 @@
     width: 100%;
     padding: 8px 12px;
     margin-left: 0;
+  }
+  .news-box {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-box-home-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  .news-box-input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
   }
   .news-item {
     width: 90%;
