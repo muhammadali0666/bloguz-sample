@@ -12,7 +12,7 @@ export const News = () => {
   const [page, setPage] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:4001/posts?page=${pageCount}&limit=9`)
+    fetch(import.meta.env.VITE_APP_BASE_URL + `/posts?page=${pageCount}&limit=9`)
       .then((res) => res.json())
       .then((data) => {
         setPosts(data.results);

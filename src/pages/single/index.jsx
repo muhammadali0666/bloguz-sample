@@ -1,33 +1,29 @@
 import "./single.css";
 import { Layouts } from "../../components/layouts";
 import Img from "../../assets/img/about-bg.png";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export const Single = () => {
+  const [info, setInfo] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    fetch(import.meta.env.VITE_APP_BASE_URL + "/post_one/" + id)
+      .then((res) => res.json())
+      .then((data) => setInfo(data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <Layouts>
       <div className="container">
         <div className="single-inner">
           <img src={Img} alt="img" className="single-img" />
-          <h2 className="single-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium, harum?
-          </h2>
-          <p className="single-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-            doloribus praesentium, reiciendis, mollitia velit, ad cumque quae
-            beatae sint facere adipisci. Mollitia, voluptatum vitae. Totam
-            temporibus vel nesciunt repudiandae! Earum blanditiis animi magnam
-            explicabo ipsam deserunt dolorum debitis excepturi magni pariatur
-            dolor aspernatur cum, non exercitationem quam delectus odit placeat
-            consequuntur error, alias dolorem id adipisci in sequi! Obcaecati
-            illo dolore, qui possimus blanditiis quas consequuntur facere error
-            voluptatem tempore quae eius facilis, fugiat nesciunt. Iusto,
-            perferendis debitis. Sit, officiis atque fuga magnam velit
-            exercitationem adipisci blanditiis consequuntur a quam perferendis
-            minima nobis, ipsa fugit ipsam corrupti sunt obcaecati voluptate?
-          </p>
+          <h2 className="single-title">{info.title}</h2>
+          <p className="single-text">{info.text}</p>
           <div className="single-bottom">
-            <p className="single-date">01/02/2024</p>
+            <p className="single-date">{info.createdAt.slice(0,10)}</p>
           </div>
         </div>
       </div>
