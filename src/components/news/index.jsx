@@ -45,21 +45,21 @@ export const News = () => {
             {posts.length ? (
               posts.map((item, index) => (
                 <li className="news-item" key={index}>
-                    <img src={Cardimg} alt="img" className="news-img" />
-                    <div className="card-box">
-                      <h4 className="card-title">{item.title}</h4>
-                      <p className="card-text">{item.text}</p>
-                      <div className="card-bottom">
-                        <p className="card-time">01.30.2024</p>
-                    <NavLink to={`/single/${item.id}`}>
+                  <img src={Cardimg} alt="img" className="news-img" />
+                  <div className="card-box">
+                    <h4 className="card-title">{item.title.slice(0,40)}...</h4>
+                    <p className="card-text">{item.text.slice(0,100)}...</p>
+                    <div className="card-bottom">
+                      <p className="card-time">01.30.2024</p>
+                      <NavLink to={`/single/${item.id}`}>
                         <button className="card-btn">
                           ko'proq
                           <FaArrowCircleRight className="card-arrow" />
                         </button>
-                </NavLink>
-                      </div>
+                      </NavLink>
                     </div>
-                  </li>
+                  </div>
+                </li>
               ))
             ) : (
               <h1>Loading...</h1>
