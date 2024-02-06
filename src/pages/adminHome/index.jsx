@@ -44,9 +44,44 @@ export const AdminHome = () => {
             <button className="admin-home-add-btn">qo'shish</button>
           </div>
         </div>
-        <AdminNews/>
         <TableContainer component={Paper} className="admin-home-table">
-        <h2 className="admin-home-title-bottom">Yangiliklarni boshqarish</h2>
+          <h2 className="admin-home-title-bottom">Slidelarni boshqarish</h2>
+          <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+            <TableHead>
+              <TableRow>
+                <TableCell className="admin-home-header">Id</TableCell>
+                <TableCell className="admin-home-header" align="right">
+                  Rasm
+                </TableCell>
+                <TableCell className="admin-home-header" align="right">
+                  O'chirish
+                </TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell
+                  className="admin-home-body"
+                  component="th"
+                  scope="row"
+                >
+                  name
+                </TableCell>
+                <TableCell className="admin-home-body" align="right">
+                  cabs
+                </TableCell>
+                <TableCell className="admin-home-body" align="right">
+                  <RiDeleteBin6Fill className="admin-home-delete" />
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <AdminNews />
+        <TableContainer component={Paper} className="admin-home-table">
+          <h2 className="admin-home-title-bottom">Yangiliklarni boshqarish</h2>
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
               <TableRow>
