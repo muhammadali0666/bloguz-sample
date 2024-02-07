@@ -1,5 +1,5 @@
 import "./adminHome.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -15,6 +15,7 @@ import { AdminNews } from "../../components/addNews";
 
 export const AdminHome = () => {
   const [img, setImg] = useState(null);
+  const [slideList, setSlideList] = useState([]);
 
   const handleImg = (e) => {
     setImg(e.target.files[0]);
@@ -51,6 +52,18 @@ export const AdminHome = () => {
         }
       });
   };
+
+  useEffect(() => {
+    fetch(`http://localhost:4001/slide`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => setSlideList(data))
+      .catch((error) => console.log(error))
+  }, []);
 
   const VisuallyHiddenInput = styled("input")({
     clip: "rect(0 0 0 0)",
@@ -90,7 +103,6 @@ export const AdminHome = () => {
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
               <TableRow>
-                <TableCell className="admin-home-header">Id</TableCell>
                 <TableCell className="admin-home-header" align="right">
                   Rasm
                 </TableCell>
@@ -100,23 +112,20 @@ export const AdminHome = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              <TableRow
+             {
+              slideList.length && slideList.map((item) => (
+                <TableRow
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell
-                  className="admin-home-body"
-                  component="th"
-                  scope="row"
-                >
-                  name
-                </TableCell>
                 <TableCell className="admin-home-body" align="right">
-                  cabs
+                  <img src={item.img} alt="" className="slide-img" width={60} height={60}/>
                 </TableCell>
                 <TableCell className="admin-home-body" align="right">
                   <RiDeleteBin6Fill className="admin-home-delete" />
                 </TableCell>
               </TableRow>
+              ))
+             }
             </TableBody>
           </Table>
         </TableContainer>
