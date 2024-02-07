@@ -1,5 +1,5 @@
 import "./adminHome.css";
-import React from "react";
+import React, { useState } from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -14,6 +14,44 @@ import { MdCloudUpload } from "react-icons/md";
 import { AdminNews } from "../../components/addNews";
 
 export const AdminHome = () => {
+  const [img, setImg] = useState(null);
+
+  const handleImg = (e) => {
+    setImg(e.target.files[0]);
+  };
+
+  const formData = new FormData();
+  formData.append("file", img);
+  formData.append("upload_preset", "blog-preset");
+
+  const handleData = async (e) => {
+    e.preventDefault();
+
+    fetch("https://api.cloudinary.com/v1_1/dxealoh68/image/upload", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        {
+          fetch("http://localhost:4001/create_slide", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              img: data.url,
+            }),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              alert(data?.message);
+            })
+            .catch((error) => console.log(error));
+        }
+      });
+  };
+
   const VisuallyHiddenInput = styled("input")({
     clip: "rect(0 0 0 0)",
     clipPath: "inset(50%)",
@@ -37,11 +75,14 @@ export const AdminHome = () => {
               variant="contained"
               className="admin-home-add"
               startIcon={<MdCloudUpload />}
+              onChange={(e) => handleImg(e)}
             >
               Upload file
               <VisuallyHiddenInput type="file" />
             </Button>
-            <button className="admin-home-add-btn">qo'shish</button>
+            <button className="admin-home-add-btn" onClick={handleData}>
+              qo'shish
+            </button>
           </div>
         </div>
         <TableContainer component={Paper} className="admin-home-table">
