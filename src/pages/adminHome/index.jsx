@@ -35,7 +35,7 @@ export const AdminHome = () => {
       .then((response) => response.json())
       .then((data) => {
         {
-          fetch("http://localhost:4001/create_slide", {
+          fetch(import.meta.env.VITE_APP_BASE_URL + "/create_slide", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -46,6 +46,9 @@ export const AdminHome = () => {
           })
             .then((res) => res.json())
             .then((data) => {
+              if (data?.message === "created slide") {
+                location.reload();
+              }
               alert(data?.message);
             })
             .catch((error) => console.log(error));
@@ -54,7 +57,7 @@ export const AdminHome = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:4001/slide`, {
+    fetch(import.meta.env.VITE_APP_BASE_URL + `/slide`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -62,8 +65,25 @@ export const AdminHome = () => {
     })
       .then((res) => res.json())
       .then((data) => setSlideList(data))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   }, []);
+
+  const handleDelete = (e) => {
+    fetch(import.meta.env.VITE_APP_BASE_URL + "/delete_slide/" + e, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if(data.msg === "deleted slide!"){
+          location.reload()
+        }
+        alert(data.msg)
+      })
+      .catch((error) => console.log(error));
+  };
 
   const VisuallyHiddenInput = styled("input")({
     clip: "rect(0 0 0 0)",
@@ -112,20 +132,29 @@ export const AdminHome = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-             {
-              slideList.length && slideList.map((item) => (
-                <TableRow
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell className="admin-home-body" align="right">
-                  <img src={item.img} alt="" className="slide-img" width={60} height={60}/>
-                </TableCell>
-                <TableCell className="admin-home-body" align="right">
-                  <RiDeleteBin6Fill className="admin-home-delete" />
-                </TableCell>
-              </TableRow>
-              ))
-             }
+              {slideList.length &&
+                slideList.map((item) => (
+                  <TableRow
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                    key={item.id}
+                  >
+                    <TableCell className="admin-home-body" align="right">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="slide-img"
+                        width={60}
+                        height={60}
+                      />
+                    </TableCell>
+                    <TableCell className="admin-home-body" align="right">
+                      <RiDeleteBin6Fill
+                        className="admin-home-delete"
+                        onClick={() => handleDelete(item.id)}
+                      />
+                    </TableCell>
+                  </TableRow>
+                ))}
             </TableBody>
           </Table>
         </TableContainer>
